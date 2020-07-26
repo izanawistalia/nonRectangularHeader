@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+}
+body{
+    background-color: aliceblue;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    min-width: 100vh;
+    overflow: hidden;
+}
+.content{
+    padding: 3%;
+    color: white;
+    position: relative;
+}
+.content:before{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    content: '';
+    height: 100vh;
+    min-width: 100vh;
+    background-color: aqua;
+    z-index: -1;
+    border-radius: 50%;
+    transform: scale(4.5) translate(-11%,-52%);
+}
+.content h2{
+    font-size: 3em;
+    text-transform: uppercase;
+}
+.content p{
+    font-size: 1.2em;
+}
